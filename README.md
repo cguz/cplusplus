@@ -6,7 +6,7 @@ Continuously learning the C++ language.
 
 ## Courses
 
-* [Modern C++ Concurrency in Depth (C++17/20)](https://www.udemy.com/course/modern-cpp-concurrency-in-depth/) : 15% Complete
+* [Modern C++ Concurrency in Depth (C++17/20)](https://www.udemy.com/course/modern-cpp-concurrency-in-depth/) : 20% Complete
 * [Learn Multithreading in C++](https://www.udemy.com/course/cplusplus-multithreading) : 0 % Complete
 * [Design Patterns in Modern C++](https://www.udemy.com/course/patterns-cplusplus/) : 70 % Complete
 * [Learn Advanced Modern C++](https://www.udemy.com/course/learn-intermediate-modern-c/) : 60% Complete
@@ -21,7 +21,7 @@ In the folder [src](https://github.com/cguz/cplusplus/src/) you can find the imp
 
 - Invariants: a statemente that is always true.
 - Race condition: In concurrency race condition is anything where outcome is depend on the relative ordering of execution of operations on two or more threads. Solved with Mutex.
-- Mutex: 
+- Mutex: protect shared data for multiple threads
 
 ### C++ 11
 
@@ -33,6 +33,9 @@ In the folder [src](https://github.com/cguz/cplusplus/src/) you can find the imp
 	- get_id : returns the id of the thread 
 	- hardware_concurrency : returns the number of concurrent threads supported by the implementation
 
+- [mutex](https://en.cppreference.com/w/cpp/thread/mutex)
+
+	- lock_guard: is a mutex wrapper that provides a convenient RAII-style mechanism for owning a mutex for the duration of a scoped block.
 
 ### C++ 17 
 
