@@ -9,7 +9,7 @@ Continuously learning the C++ language.
 * [Modern C++ Concurrency in Depth (C++17/20)](https://www.udemy.com/course/modern-cpp-concurrency-in-depth/) : 15% Complete
 * [Learn Multithreading in C++](https://www.udemy.com/course/cplusplus-multithreading) : 0 % Complete
 * [Design Patterns in Modern C++](https://www.udemy.com/course/patterns-cplusplus/) : 70 % Complete
-* [Learn Advanced Modern C++] (https://www.udemy.com/course/learn-intermediate-modern-c/) : 60% Complete
+* [Learn Advanced Modern C++](https://www.udemy.com/course/learn-intermediate-modern-c/) : 60% Complete
 
 ## Code
 
