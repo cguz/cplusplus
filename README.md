@@ -15,7 +15,35 @@ Continuously learning the C++ language.
 
 In the folder [src](https://github.com/cguz/cplusplus/src/) you can find the implementented code of each course.
 
+## Learning features
+
+### shared data and locking mechanisms
+
+- Invariants: a statemente that is always true.
+- Race condition: In concurrency race condition is anything where outcome is depend on the relative ordering of execution of operations on two or more threads. Solved with Mutex.
+- Mutex: 
+
+### C++ 11
+
+- [thread](https://en.cppreference.com/w/cpp/thread/thread)
+
+	- join : waits for the thread to finish its execution
+	- detach : permits the thread to execute independently from the thread handle
+	- joinable : checks whether the thread is joinable, i.e. potentially running in parallel context
+	- get_id : returns the id of the thread 
+	- hardware_concurrency : returns the number of concurrent threads supported by the implementation
+
+
+### C++ 17 
+
+### C++ 20
+
+- [accumulate](https://en.cppreference.com/w/cpp/algorithm/accumulate) : Computes an operation of some given elements.
+
+
 ## Useful information
 
 * [C++ compiler support](https://en.cppreference.com/w/cpp/compiler_support)
+* [Compiler explorer](https://godbolt.org/)
+* [Git repository of Modern C++ Concurrency in Depth course](https://github.com/kasunindikaliyanage/cpp_concurrency_masterclass)
 
