@@ -37,6 +37,11 @@ In the folder [src](https://github.com/cguz/cplusplus/src/) you can find the imp
 
 	- lock_guard: is a mutex wrapper that provides a convenient RAII-style mechanism for owning a mutex for the duration of a scoped block.
 
+- [shared\_ptr](https://en.cppreference.com/w/cpp/memory/shared_ptr) :  smart pointer that retains shared ownership of an object through a pointer. The object is destroyed and its memory deallocated when either of the following happens:
+
+	* the last remaining shared_ptr owning the object is destroyed;
+	* the last remaining shared_ptr owning the object is assigned another pointer via operator= or reset().
+
 ### C++ 17 
 
 ### C++ 20
