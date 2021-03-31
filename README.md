@@ -6,7 +6,7 @@ Continuously learning the C++ language.
 
 ## Courses
 
-* [Modern C++ Concurrency in Depth (C++17/20)](https://www.udemy.com/course/modern-cpp-concurrency-in-depth/) : 20% Complete
+* [Modern C++ Concurrency in Depth (C++17/20)](https://www.udemy.com/course/modern-cpp-concurrency-in-depth/) : 35% Complete
 * [Learn Multithreading in C++](https://www.udemy.com/course/cplusplus-multithreading) : 0 % Complete
 * [Design Patterns in Modern C++](https://www.udemy.com/course/patterns-cplusplus/) : 70 % Complete
 * [Learn Advanced Modern C++](https://www.udemy.com/course/learn-intermediate-modern-c/) : 60% Complete
@@ -15,6 +15,7 @@ Continuously learning the C++ language.
 
 In the folder [src](https://github.com/cguz/cplusplus/src/) you can find the implementented code of each course.
 
+
 ## Learning features
 
 ### shared data and locking mechanisms
@@ -22,6 +23,11 @@ In the folder [src](https://github.com/cguz/cplusplus/src/) you can find the imp
 - Invariants: a statemente that is always true.
 - Race condition: In concurrency race condition is anything where outcome is depend on the relative ordering of execution of operations on two or more threads. Solved with Mutex.
 - Mutex: protect shared data for multiple threads
+
+### communication between thread
+
+- condition variables
+- thread safe queue and stack
 
 ### C++ 11
 
@@ -32,6 +38,7 @@ In the folder [src](https://github.com/cguz/cplusplus/src/) you can find the imp
 	- joinable : checks whether the thread is joinable, i.e. potentially running in parallel context
 	- get_id : returns the id of the thread 
 	- hardware_concurrency : returns the number of concurrent threads supported by the implementation
+
 
 - [mutex](https://en.cppreference.com/w/cpp/thread/mutex)
 
@@ -45,6 +52,14 @@ In the folder [src](https://github.com/cguz/cplusplus/src/) you can find the imp
 	- [unique_lock](https://en.cppreference.com/w/cpp/thread/unique_lock) : general-purpose mutex ownership wrapper.
 
 		* lock (p1, p2)
+
+- [condition_variable](https://en.cppreference.com/w/cpp/thread/condition_variable)
+
+- [future](https://en.cppreference.com/w/cpp/thread/future): it provides a mechanism to access the result of asynchronous operations. 
+
+	- std::future<int> answer = std::async(method); ... answer.get();
+	- async policy (async, deferred)
+
 
 ### C++ 17 
 
