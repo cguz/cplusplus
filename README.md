@@ -16,18 +16,7 @@ Continuously learning the C++ language.
 In the folder [src](https://github.com/cguz/cplusplus/src/) you can find the implementented code of each course.
 
 
-## Learning features
-
-### shared data and locking mechanisms
-
-- Invariants: a statemente that is always true.
-- Race condition: In concurrency race condition is anything where outcome is depend on the relative ordering of execution of operations on two or more threads. Solved with Mutex.
-- Mutex: protect shared data for multiple threads
-
-### communication between thread
-
-- condition variables
-- thread safe queue and stack
+## Features
 
 ### C++ 11
 
