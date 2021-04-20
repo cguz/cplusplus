@@ -13,7 +13,7 @@ Continuously learning the C++ language.
 
 ## Code
 
-In the folder [src](https://github.com/cguz/cplusplus/src/) you can find the implementented code of each course.
+In the folder [src](https://github.com/cguz/cplusplus/tree/main/src) you can find the implementented code of each course.
 
 
 ## Features
