@@ -17,6 +17,13 @@ std::string to_string( int x ) {
     return str;
 }
 
+// Single-Responsibility Principle: 
+// A class should have one and only one reason to change, meaning that a class should have only one job.
+// In SOLID principle, it is better to separate the responsability.
+// Thus, we do not implement the save method in the class but in another class.
+// with this approach we have all the persistence code in one place
+
+// the Journal keeps track of the entries, but another class persist all the entries
 struct Journal {
     string title;
     vector<string> entries;
@@ -30,9 +37,7 @@ struct Journal {
 
 };
 
-// In SOLID principle, it is better to separate the persistence. 
-// Thus, we do not implement the save method in the class but in another class.
-// with this approach we have all the persistence code in one place
+// Persist all the Journals
 struct PersistenceManager {
 
     void save(const Journal& j, const string& filename){
