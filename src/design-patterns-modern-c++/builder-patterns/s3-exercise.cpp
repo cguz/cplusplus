@@ -15,6 +15,11 @@ class Code {
         Code() {}
 
         Code(const string& name, const string& type) : name{name}, type{type} {}
+        
+        friend ostream& operator<<(ostream& os, const Code& obj)
+        {
+            return os << "  " << obj.type << " " << obj.name << ";";
+        }
 };
 
 class CodeBuilder
@@ -39,7 +44,7 @@ class CodeBuilder
             os << "{" << endl;
 
             for (const auto& field : obj.root.fields){
-                os << field.type << "  " << field.name <<";" << endl;
+                os << field << endl;
             }
 
             os << "};";
